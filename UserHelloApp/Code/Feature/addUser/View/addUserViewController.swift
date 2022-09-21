@@ -110,7 +110,7 @@ extension addUserViewController: addUserView {
     
     
     func showAlertError(title: String, message: String) {
-        
+        self.ShowAlert(title: title, message: message)
     }
     
 }

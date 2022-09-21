@@ -53,9 +53,6 @@ class detailUserViewController: BaseViewController {
      
     }
     
-    @objc func AddButtonPressed(sender: Any) {
-    }
-    
 }
 // MARK: - BillViewController
 extension detailUserViewController: detailUserView {
@@ -68,7 +65,7 @@ extension detailUserViewController: detailUserView {
     
     
     func showAlertError(title: String, message: String) {
-        
+        self.ShowAlert(title: title, message: message)
     }
     
 }
@@ -86,8 +83,13 @@ private extension detailUserViewController {
     
     
     func configView() {
+        var userName = detailUser.name ?? "List_Name_Default".sLocalized
+        if userName == "" {
+            userName = "List_Name_Default".sLocalized
+        }
+        
         self.birthdateLabel.text =  detailUser.formatBirtdate()
-        nameTextLabel.text = detailUser.name ?? "List_Name_Default".sLocalized
+        nameTextLabel.text =  userName
         dayBirthdateLabel.text = detailUser.getDayBirtdate()
         MonthBirthdateLabel.text = detailUser.getMonthBirtdate().uppercased()
     }

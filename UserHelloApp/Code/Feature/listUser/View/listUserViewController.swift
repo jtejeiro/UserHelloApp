@@ -64,7 +64,7 @@ extension listUserViewController: listUserView {
     }
     
     func showAlertError(title: String, message: String) {
-        
+        self.ShowAlert(title: title, message: message)
     }
     
 }
@@ -121,7 +121,6 @@ extension listUserViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       if editingStyle == .delete {
-        print("Deleted")
           let cellID = viewModel.userList[indexPath.row].id
           let cellStringID = String(cellID)
           presenter?.deleteListUser(cellStringID)

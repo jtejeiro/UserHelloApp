@@ -42,7 +42,13 @@ class listUserTableViewCell: UITableViewCell {
     
     func setupCell(user:User){
         self.birthdateLabel.text =  user.formatBirtdate()
-        nameLabel.text = user.name ?? "List_Name_Default".sLocalized
+        
+        var userName = user.name ?? "List_Name_Default".sLocalized
+        if userName == "" {
+            userName = "List_Name_Default".sLocalized
+        }
+        
+        nameLabel.text = userName
         dayBirthdateLabel.text = user.getDayBirtdate()
         MonthBirthdateLabel.text = user.getMonthBirtdate().uppercased()
     }

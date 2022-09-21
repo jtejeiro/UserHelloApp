@@ -44,7 +44,6 @@ extension listUserInteractorImpl: listUserInteractor {
             
             switch response.result {
             case .success:
-                
                 guard let data = response.data else {return}
                 if let result = try? JSONDecoder().decode(UserElement.self , from: data){
                     self.presenter?.fetchedlistUser(result: .success(result))

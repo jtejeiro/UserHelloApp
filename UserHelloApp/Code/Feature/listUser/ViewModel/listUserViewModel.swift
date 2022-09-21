@@ -16,11 +16,12 @@ struct listUserViewModel {
     }
     
     mutating func orderByDateListUser() {
-        if !orderBy {
-            userList = userList.sorted(by: ({ $0.getbirthdate().compare($1.getbirthdate()) == .orderedDescending}))
-        } else {
-            userList = userList.sorted(by: ({ $0.getbirthdate().compare($1.getbirthdate()) == .orderedAscending}))
+        var type = ComparisonResult.orderedDescending
+        if orderBy {
+           type = ComparisonResult.orderedAscending
         }
+        
+        userList = userList.sorted(by: ({ $0.getbirthdate().compare($1.getbirthdate()) == type}))
         orderBy = !orderBy
     }
     
