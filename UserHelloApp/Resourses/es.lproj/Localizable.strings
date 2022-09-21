@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  UserHelloApp
+
+  Created by Jaime Tejeiro on 20/9/22.
+  
+*/
+"Loading_Text" = "Espere por favor...";
+"Title_Hello" = "Hola Mundo!";
+"List_User" = "Nombre:";
+"List_Birthday" = "Cumpleaños:";
+"List_Name_Default" = "Defecto";
+"Add_Title" = "Ingresa tus datos";
+"Add_Title_Box" = "Agrega tu nombre:";
+"Add_Subtitle_Box" = "Agrega el día de tu cumpleaños:";
+"Add_Send_Button" = "Enviar";
+"Add_Cancel_Button" = "Cancelar";
+"Detail_Title" = "Usuario registrado";
