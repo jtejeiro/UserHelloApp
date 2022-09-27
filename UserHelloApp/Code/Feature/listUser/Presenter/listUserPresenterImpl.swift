@@ -1,5 +1,5 @@
 //
-//  listUserPresenterImpl.swift
+//  ListUserPresenterImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,16 +8,16 @@ import UIKit
 import Foundation
 
 
-class listUserPresenterImpl{
+class ListUserPresenterImpl{
     
     
     // MARK: - Properties
-    weak var view: listUserView?
-    var interactor: listUserInteractor?
-    var router: listUserRouter?
+    weak var view: ListUserView?
+    var interactor: ListUserInteractor?
+    var router: ListUserRouter?
     
     // MARK: - Var
-    var listUserVM : listUserViewModel!
+    var listUserVM : ListUserViewModel!
     
     // MARK: - Init
     init() {
@@ -25,14 +25,14 @@ class listUserPresenterImpl{
     
 }
 
-// MARK: - listUserPresenter methods
-extension listUserPresenterImpl: listUserPresenter {
+// MARK: - ListUserPresenter methods
+extension ListUserPresenterImpl: ListUserPresenter {
 
     func showDetailViewController(userID: String) {
         self.router?.routerDetailViewController(userID: userID)
     }
     func viewDidLoad() {
-        self.interactor?.fetchlistUser()
+        self.interactor?.fetchListUser()
     }
     
     func viewWillAppear() {
@@ -47,18 +47,18 @@ extension listUserPresenterImpl: listUserPresenter {
     }
     
     func deleteListUser(_ id:String) {
-        self.interactor?.fetchDeletelistUser(id)
+        self.interactor?.fetchDeleteListUser(id)
     }
     
     func reloadListUserView() {
-        self.interactor?.fetchlistUser()
+        self.interactor?.fetchListUser()
     }
     
 }
-// MARK: - listUserInteractorCallback methods
-extension listUserPresenterImpl: listUserInteractorCallback {
+// MARK: - ListUserInteractorCallback methods
+extension ListUserPresenterImpl: ListUserInteractorCallback {
     
-    func fetchedDeletelistUser(result: Result<String, Error>) {
+    func fetchedDeleteListUser(result: Result<String, Error>) {
         
         switch result {
           case .success(let data):
@@ -71,13 +71,13 @@ extension listUserPresenterImpl: listUserInteractorCallback {
     }
     
     
-    func fetchedlistUser(result: Result< [User], Error>) {
+    func fetchedListUser(result: Result< [User], Error>) {
         
         switch result {
           case .success(let data):
                 let listResponse:[User] = data
-                self.listUserVM = listUserViewModel.mapperTolistUserResponse(listUser: listResponse)
-                view?.showlistUser(listUserVM: self.listUserVM)
+                self.listUserVM = ListUserViewModel.mapperToListUserResponse(listUser: listResponse)
+                view?.showListUser(listUserVM: self.listUserVM)
           case .failure(let error):
               print(error)
               view?.showAlertError(title: "Error", message: "check connection")
@@ -90,7 +90,7 @@ extension listUserPresenterImpl: listUserInteractorCallback {
 
 
 // MARK: - Private methods
-private extension listUserPresenterImpl {
+private extension ListUserPresenterImpl {
     
   
 }

@@ -1,5 +1,5 @@
 //
-//  listUserViewController.swift
+//  ListUserViewController.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -9,15 +9,15 @@ import UIKit
 import Foundation
 
 
-class listUserViewController: BaseViewController {
+class ListUserViewController: BaseViewController {
     
     
     // MARK: - Properties
-    var presenter: listUserPresenter?
+    var presenter: ListUserPresenter?
     
     @IBOutlet weak var tableView:UITableView!
     
-    private var viewModel:listUserViewModel!
+    private var viewModel:ListUserViewModel!
 
     //MARK: - View Life Cycle Methods.
     override func viewDidLoad() {
@@ -55,21 +55,22 @@ class listUserViewController: BaseViewController {
     }
     
 }
-// MARK: - BillViewController
-extension listUserViewController: listUserView {
-    func showlistUser(listUserVM: listUserViewModel) {
+// MARK: - ListUserViewController
+extension ListUserViewController: ListUserView {
+    func showListUser(listUserVM: ListUserViewModel) {
         stopLoading()
         self.viewModel = listUserVM
         configView()
     }
     
     func showAlertError(title: String, message: String) {
+        stopLoading()
         self.ShowAlert(title: title, message: message)
     }
     
 }
 // MARK: - Private methods
-private extension listUserViewController {
+private extension ListUserViewController {
     
     // MARK: - Setup
     func setupInit() {
@@ -91,7 +92,7 @@ private extension listUserViewController {
     func configTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(listUserTableViewCell.nib(), forCellReuseIdentifier: listUserTableViewCell.name())
+        tableView.register(ListUserTableViewCell.nib(), forCellReuseIdentifier: ListUserTableViewCell.name())
         tableView.rowHeight = UITableView.automaticDimension
     }
     
@@ -102,7 +103,7 @@ private extension listUserViewController {
 
 }
 
-extension listUserViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListUserViewController: UITableViewDelegate, UITableViewDataSource {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.userList.count
@@ -110,8 +111,8 @@ extension listUserViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: listUserTableViewCell.name(), for: indexPath) as? listUserTableViewCell else{
-            return listUserTableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ListUserTableViewCell.name(), for: indexPath) as? ListUserTableViewCell else{
+            return UITableViewCell()
         }
         
         cell.setupCell(user: viewModel.userList[indexPath.row])
@@ -134,7 +135,7 @@ extension listUserViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension listUserViewController: addUserPopUpDelegate {
+extension ListUserViewController: AddUserPopUpDelegate {
     
     func addUserCloseViewController() {
         self.presenter?.reloadListUserView()

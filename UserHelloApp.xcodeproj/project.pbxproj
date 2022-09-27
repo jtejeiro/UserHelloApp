@@ -8,23 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4600B80228DA06E2009DB32B /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600B80128DA06E2009DB32B /* ExtString.swift */; };
-		4600B80528DA0880009DB32B /* listUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600B80328DA0880009DB32B /* listUserTableViewCell.swift */; };
-		4600B80628DA0880009DB32B /* listUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4600B80428DA0880009DB32B /* listUserTableViewCell.xib */; };
-		4619A58628DA677800F89EE3 /* listUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A58528DA677800F89EE3 /* listUserViewModel.swift */; };
-		4619A59B28DA881100F89EE3 /* addUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59928DA881100F89EE3 /* addUserViewController.swift */; };
-		4619A59C28DA881100F89EE3 /* addUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4619A59A28DA881100F89EE3 /* addUserViewController.xib */; };
-		4619A59D28DA960400F89EE3 /* addUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59328DA86B200F89EE3 /* addUserProtocols.swift */; };
-		4619A59E28DA960400F89EE3 /* addUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59528DA86B200F89EE3 /* addUserConfigurator.swift */; };
-		4619A59F28DA960400F89EE3 /* addUserPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A58828DA86B200F89EE3 /* addUserPresenterImpl.swift */; };
-		4619A5A028DA960400F89EE3 /* addUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59128DA86B200F89EE3 /* addUserInteractorImpl.swift */; };
-		4619A5A128DA960400F89EE3 /* addUserRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A58F28DA86B200F89EE3 /* addUserRouterImpl.swift */; };
-		4619A5B128DB51EE00F89EE3 /* detailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5AF28DB51EE00F89EE3 /* detailUserViewController.swift */; };
-		4619A5B228DB51EE00F89EE3 /* detailUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4619A5B028DB51EE00F89EE3 /* detailUserViewController.xib */; };
-		4619A5B328DB532B00F89EE3 /* detailUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5A328DB4F0E00F89EE3 /* detailUserProtocols.swift */; };
-		4619A5B428DB532B00F89EE3 /* detailUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5AE28DB4F0E00F89EE3 /* detailUserConfigurator.swift */; };
-		4619A5B528DB532B00F89EE3 /* detailUserPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5A528DB4F0E00F89EE3 /* detailUserPresenterImpl.swift */; };
-		4619A5B628DB532B00F89EE3 /* detailUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5AC28DB4F0E00F89EE3 /* detailUserInteractorImpl.swift */; };
-		4619A5B728DB532B00F89EE3 /* detailUserRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5A728DB4F0E00F89EE3 /* detailUserRouterImpl.swift */; };
+		4600B80528DA0880009DB32B /* ListUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4600B80328DA0880009DB32B /* ListUserTableViewCell.swift */; };
+		4600B80628DA0880009DB32B /* ListUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4600B80428DA0880009DB32B /* ListUserTableViewCell.xib */; };
+		4603E20128E39A5A0070992F /* ListUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 4603E20028E39A5A0070992F /* ListUser.json */; };
+		4603E20328E39B0C0070992F /* DetailUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 4603E20228E39B0C0070992F /* DetailUser.json */; };
+		4603E20528E39B630070992F /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4603E20428E39B630070992F /* MockManager.swift */; };
+		4603E20728E39C180070992F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4603E20628E39C180070992F /* Utils.swift */; };
+		4603E20928E39F8B0070992F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4603E20828E39F8B0070992F /* NetworkError.swift */; };
+		4619A58628DA677800F89EE3 /* ListUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A58528DA677800F89EE3 /* ListUserViewModel.swift */; };
+		4619A59B28DA881100F89EE3 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59928DA881100F89EE3 /* AddUserViewController.swift */; };
+		4619A59C28DA881100F89EE3 /* AddUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4619A59A28DA881100F89EE3 /* AddUserViewController.xib */; };
+		4619A59D28DA960400F89EE3 /* AddUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59328DA86B200F89EE3 /* AddUserProtocols.swift */; };
+		4619A59E28DA960400F89EE3 /* AddUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59528DA86B200F89EE3 /* AddUserConfigurator.swift */; };
+		4619A59F28DA960400F89EE3 /* AddUserPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A58828DA86B200F89EE3 /* AddUserPresenterImpl.swift */; };
+		4619A5A028DA960400F89EE3 /* AddUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A59128DA86B200F89EE3 /* AddUserInteractorImpl.swift */; };
+		4619A5A128DA960400F89EE3 /* AddUserRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A58F28DA86B200F89EE3 /* AddUserRouterImpl.swift */; };
+		4619A5B128DB51EE00F89EE3 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5AF28DB51EE00F89EE3 /* DetailUserViewController.swift */; };
+		4619A5B228DB51EE00F89EE3 /* DetailUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4619A5B028DB51EE00F89EE3 /* DetailUserViewController.xib */; };
+		4619A5B328DB532B00F89EE3 /* DetailUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5A328DB4F0E00F89EE3 /* DetailUserProtocols.swift */; };
+		4619A5B428DB532B00F89EE3 /* DetailUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5AE28DB4F0E00F89EE3 /* DetailUserConfigurator.swift */; };
+		4619A5B528DB532B00F89EE3 /* DetailUserPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5A528DB4F0E00F89EE3 /* DetailUserPresenterImpl.swift */; };
+		4619A5B628DB532B00F89EE3 /* DetailUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5AC28DB4F0E00F89EE3 /* DetailUserInteractorImpl.swift */; };
+		4619A5B728DB532B00F89EE3 /* DetailUserRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619A5A728DB4F0E00F89EE3 /* DetailUserRouterImpl.swift */; };
 		469D32C228D9099400CAACE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D32C128D9099400CAACE4 /* AppDelegate.swift */; };
 		469D32C428D9099400CAACE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D32C328D9099400CAACE4 /* SceneDelegate.swift */; };
 		469D32CB28D9099800CAACE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469D32CA28D9099800CAACE4 /* Assets.xcassets */; };
@@ -37,13 +42,13 @@
 		469D32FA28D90CA000CAACE4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D32F928D90CA000CAACE4 /* BaseViewController.swift */; };
 		469D32FC28D90CB400CAACE4 /* BaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D32FB28D90CB400CAACE4 /* BaseConfigurator.swift */; };
 		469D32FE28D90CD100CAACE4 /* BaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D32FD28D90CD100CAACE4 /* BaseApiClient.swift */; };
-		469D331128D9D09E00CAACE4 /* listUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331028D9D09E00CAACE4 /* listUserConfigurator.swift */; };
-		469D331328D9D0F900CAACE4 /* listUserPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331228D9D0F900CAACE4 /* listUserPresenterImpl.swift */; };
-		469D331628D9D13C00CAACE4 /* listUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331528D9D13C00CAACE4 /* listUserInteractorImpl.swift */; };
-		469D331828D9D16800CAACE4 /* listUserRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331728D9D16800CAACE4 /* listUserRouterImpl.swift */; };
-		469D331B28D9D19100CAACE4 /* listUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331928D9D19100CAACE4 /* listUserViewController.swift */; };
-		469D331C28D9D19100CAACE4 /* listUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469D331A28D9D19100CAACE4 /* listUserViewController.xib */; };
-		469D331F28D9D1E800CAACE4 /* listUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331E28D9D1E800CAACE4 /* listUserProtocols.swift */; };
+		469D331128D9D09E00CAACE4 /* ListUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331028D9D09E00CAACE4 /* ListUserConfigurator.swift */; };
+		469D331328D9D0F900CAACE4 /* ListUserPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331228D9D0F900CAACE4 /* ListUserPresenterImpl.swift */; };
+		469D331628D9D13C00CAACE4 /* ListUserInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331528D9D13C00CAACE4 /* ListUserInteractorImpl.swift */; };
+		469D331828D9D16800CAACE4 /* ListUserRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331728D9D16800CAACE4 /* ListUserRouterImpl.swift */; };
+		469D331B28D9D19100CAACE4 /* ListUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331928D9D19100CAACE4 /* ListUserViewController.swift */; };
+		469D331C28D9D19100CAACE4 /* ListUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469D331A28D9D19100CAACE4 /* ListUserViewController.xib */; };
+		469D331F28D9D1E800CAACE4 /* ListUserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D331E28D9D1E800CAACE4 /* ListUserProtocols.swift */; };
 		469D332128D9D20500CAACE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D332028D9D20500CAACE4 /* User.swift */; };
 		469D332428D9D8EE00CAACE4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 469D332628D9D8EE00CAACE4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -67,23 +72,28 @@
 
 /* Begin PBXFileReference section */
 		4600B80128DA06E2009DB32B /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
-		4600B80328DA0880009DB32B /* listUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserTableViewCell.swift; sourceTree = "<group>"; };
-		4600B80428DA0880009DB32B /* listUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listUserTableViewCell.xib; sourceTree = "<group>"; };
-		4619A58528DA677800F89EE3 /* listUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserViewModel.swift; sourceTree = "<group>"; };
-		4619A58828DA86B200F89EE3 /* addUserPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserPresenterImpl.swift; sourceTree = "<group>"; };
-		4619A58F28DA86B200F89EE3 /* addUserRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserRouterImpl.swift; sourceTree = "<group>"; };
-		4619A59128DA86B200F89EE3 /* addUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserInteractorImpl.swift; sourceTree = "<group>"; };
-		4619A59328DA86B200F89EE3 /* addUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserProtocols.swift; sourceTree = "<group>"; };
-		4619A59528DA86B200F89EE3 /* addUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserConfigurator.swift; sourceTree = "<group>"; };
-		4619A59928DA881100F89EE3 /* addUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addUserViewController.swift; sourceTree = "<group>"; };
-		4619A59A28DA881100F89EE3 /* addUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = addUserViewController.xib; sourceTree = "<group>"; };
-		4619A5A328DB4F0E00F89EE3 /* detailUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailUserProtocols.swift; sourceTree = "<group>"; };
-		4619A5A528DB4F0E00F89EE3 /* detailUserPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailUserPresenterImpl.swift; sourceTree = "<group>"; };
-		4619A5A728DB4F0E00F89EE3 /* detailUserRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailUserRouterImpl.swift; sourceTree = "<group>"; };
-		4619A5AC28DB4F0E00F89EE3 /* detailUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailUserInteractorImpl.swift; sourceTree = "<group>"; };
-		4619A5AE28DB4F0E00F89EE3 /* detailUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailUserConfigurator.swift; sourceTree = "<group>"; };
-		4619A5AF28DB51EE00F89EE3 /* detailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailUserViewController.swift; sourceTree = "<group>"; };
-		4619A5B028DB51EE00F89EE3 /* detailUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = detailUserViewController.xib; sourceTree = "<group>"; };
+		4600B80328DA0880009DB32B /* ListUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserTableViewCell.swift; sourceTree = "<group>"; };
+		4600B80428DA0880009DB32B /* ListUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserTableViewCell.xib; sourceTree = "<group>"; };
+		4603E20028E39A5A0070992F /* ListUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ListUser.json; sourceTree = "<group>"; };
+		4603E20228E39B0C0070992F /* DetailUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailUser.json; sourceTree = "<group>"; };
+		4603E20428E39B630070992F /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
+		4603E20628E39C180070992F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4603E20828E39F8B0070992F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4619A58528DA677800F89EE3 /* ListUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserViewModel.swift; sourceTree = "<group>"; };
+		4619A58828DA86B200F89EE3 /* AddUserPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserPresenterImpl.swift; sourceTree = "<group>"; };
+		4619A58F28DA86B200F89EE3 /* AddUserRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserRouterImpl.swift; sourceTree = "<group>"; };
+		4619A59128DA86B200F89EE3 /* AddUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserInteractorImpl.swift; sourceTree = "<group>"; };
+		4619A59328DA86B200F89EE3 /* AddUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserProtocols.swift; sourceTree = "<group>"; };
+		4619A59528DA86B200F89EE3 /* AddUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserConfigurator.swift; sourceTree = "<group>"; };
+		4619A59928DA881100F89EE3 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		4619A59A28DA881100F89EE3 /* AddUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserViewController.xib; sourceTree = "<group>"; };
+		4619A5A328DB4F0E00F89EE3 /* DetailUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserProtocols.swift; sourceTree = "<group>"; };
+		4619A5A528DB4F0E00F89EE3 /* DetailUserPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserPresenterImpl.swift; sourceTree = "<group>"; };
+		4619A5A728DB4F0E00F89EE3 /* DetailUserRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserRouterImpl.swift; sourceTree = "<group>"; };
+		4619A5AC28DB4F0E00F89EE3 /* DetailUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserInteractorImpl.swift; sourceTree = "<group>"; };
+		4619A5AE28DB4F0E00F89EE3 /* DetailUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserConfigurator.swift; sourceTree = "<group>"; };
+		4619A5AF28DB51EE00F89EE3 /* DetailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
+		4619A5B028DB51EE00F89EE3 /* DetailUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailUserViewController.xib; sourceTree = "<group>"; };
 		469D32BE28D9099400CAACE4 /* UserHelloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserHelloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469D32C128D9099400CAACE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469D32C328D9099400CAACE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,13 +109,13 @@
 		469D32F928D90CA000CAACE4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		469D32FB28D90CB400CAACE4 /* BaseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfigurator.swift; sourceTree = "<group>"; };
 		469D32FD28D90CD100CAACE4 /* BaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiClient.swift; sourceTree = "<group>"; };
-		469D331028D9D09E00CAACE4 /* listUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserConfigurator.swift; sourceTree = "<group>"; };
-		469D331228D9D0F900CAACE4 /* listUserPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserPresenterImpl.swift; sourceTree = "<group>"; };
-		469D331528D9D13C00CAACE4 /* listUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserInteractorImpl.swift; sourceTree = "<group>"; };
-		469D331728D9D16800CAACE4 /* listUserRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserRouterImpl.swift; sourceTree = "<group>"; };
-		469D331928D9D19100CAACE4 /* listUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserViewController.swift; sourceTree = "<group>"; };
-		469D331A28D9D19100CAACE4 /* listUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listUserViewController.xib; sourceTree = "<group>"; };
-		469D331E28D9D1E800CAACE4 /* listUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listUserProtocols.swift; sourceTree = "<group>"; };
+		469D331028D9D09E00CAACE4 /* ListUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserConfigurator.swift; sourceTree = "<group>"; };
+		469D331228D9D0F900CAACE4 /* ListUserPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserPresenterImpl.swift; sourceTree = "<group>"; };
+		469D331528D9D13C00CAACE4 /* ListUserInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserInteractorImpl.swift; sourceTree = "<group>"; };
+		469D331728D9D16800CAACE4 /* ListUserRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserRouterImpl.swift; sourceTree = "<group>"; };
+		469D331928D9D19100CAACE4 /* ListUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserViewController.swift; sourceTree = "<group>"; };
+		469D331A28D9D19100CAACE4 /* ListUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserViewController.xib; sourceTree = "<group>"; };
+		469D331E28D9D1E800CAACE4 /* ListUserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserProtocols.swift; sourceTree = "<group>"; };
 		469D332028D9D20500CAACE4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		469D332528D9D8EE00CAACE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		469D332728D9D96F00CAACE4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -141,14 +151,25 @@
 			isa = PBXGroup;
 			children = (
 				4600B80128DA06E2009DB32B /* ExtString.swift */,
+				4603E20428E39B630070992F /* MockManager.swift */,
+				4603E20628E39C180070992F /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4603E1FF28E399A30070992F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				4603E20028E39A5A0070992F /* ListUser.json */,
+				4603E20228E39B0C0070992F /* DetailUser.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		4619A58428DA671F00F89EE3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4619A58528DA677800F89EE3 /* listUserViewModel.swift */,
+				4619A58528DA677800F89EE3 /* ListUserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -156,7 +177,7 @@
 		4619A58728DA86B200F89EE3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				4619A58828DA86B200F89EE3 /* addUserPresenterImpl.swift */,
+				4619A58828DA86B200F89EE3 /* AddUserPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -164,8 +185,8 @@
 		4619A58928DA86B200F89EE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4619A59928DA881100F89EE3 /* addUserViewController.swift */,
-				4619A59A28DA881100F89EE3 /* addUserViewController.xib */,
+				4619A59928DA881100F89EE3 /* AddUserViewController.swift */,
+				4619A59A28DA881100F89EE3 /* AddUserViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,7 +194,7 @@
 		4619A58E28DA86B200F89EE3 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				4619A58F28DA86B200F89EE3 /* addUserRouterImpl.swift */,
+				4619A58F28DA86B200F89EE3 /* AddUserRouterImpl.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -181,7 +202,7 @@
 		4619A59028DA86B200F89EE3 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				4619A59128DA86B200F89EE3 /* addUserInteractorImpl.swift */,
+				4619A59128DA86B200F89EE3 /* AddUserInteractorImpl.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -189,7 +210,7 @@
 		4619A59228DA86B200F89EE3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4619A59328DA86B200F89EE3 /* addUserProtocols.swift */,
+				4619A59328DA86B200F89EE3 /* AddUserProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -197,7 +218,7 @@
 		4619A59428DA86B200F89EE3 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				4619A59528DA86B200F89EE3 /* addUserConfigurator.swift */,
+				4619A59528DA86B200F89EE3 /* AddUserConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -205,7 +226,7 @@
 		4619A5A228DB4F0E00F89EE3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4619A5A328DB4F0E00F89EE3 /* detailUserProtocols.swift */,
+				4619A5A328DB4F0E00F89EE3 /* DetailUserProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -213,7 +234,7 @@
 		4619A5A428DB4F0E00F89EE3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				4619A5A528DB4F0E00F89EE3 /* detailUserPresenterImpl.swift */,
+				4619A5A528DB4F0E00F89EE3 /* DetailUserPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -221,7 +242,7 @@
 		4619A5A628DB4F0E00F89EE3 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				4619A5A728DB4F0E00F89EE3 /* detailUserRouterImpl.swift */,
+				4619A5A728DB4F0E00F89EE3 /* DetailUserRouterImpl.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -229,8 +250,8 @@
 		4619A5A828DB4F0E00F89EE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4619A5AF28DB51EE00F89EE3 /* detailUserViewController.swift */,
-				4619A5B028DB51EE00F89EE3 /* detailUserViewController.xib */,
+				4619A5AF28DB51EE00F89EE3 /* DetailUserViewController.swift */,
+				4619A5B028DB51EE00F89EE3 /* DetailUserViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,7 +259,7 @@
 		4619A5AB28DB4F0E00F89EE3 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				4619A5AC28DB4F0E00F89EE3 /* detailUserInteractorImpl.swift */,
+				4619A5AC28DB4F0E00F89EE3 /* DetailUserInteractorImpl.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -246,7 +267,7 @@
 		4619A5AD28DB4F0E00F89EE3 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				4619A5AE28DB4F0E00F89EE3 /* detailUserConfigurator.swift */,
+				4619A5AE28DB4F0E00F89EE3 /* DetailUserConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -312,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				469D32F628D90B8B00CAACE4 /* Kconstants .swift */,
+				4603E20828E39F8B0070992F /* NetworkError.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -329,9 +351,9 @@
 		469D32FF28D90D9C00CAACE4 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				469D330228D910C900CAACE4 /* addUser */,
-				469D330128D910AC00CAACE4 /* listUser */,
-				469D330528D9111F00CAACE4 /* detailUser */,
+				469D330228D910C900CAACE4 /* AddUser */,
+				469D330128D910AC00CAACE4 /* ListUser */,
+				469D330528D9111F00CAACE4 /* DetailUser */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -339,6 +361,7 @@
 		469D330028D90DDA00CAACE4 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				4603E1FF28E399A30070992F /* Mock */,
 				469D32C128D9099400CAACE4 /* AppDelegate.swift */,
 				469D32C328D9099400CAACE4 /* SceneDelegate.swift */,
 				469D32CA28D9099800CAACE4 /* Assets.xcassets */,
@@ -349,7 +372,7 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		469D330128D910AC00CAACE4 /* listUser */ = {
+		469D330128D910AC00CAACE4 /* ListUser */ = {
 			isa = PBXGroup;
 			children = (
 				469D331D28D9D1B500CAACE4 /* Model */,
@@ -361,10 +384,10 @@
 				4619A58428DA671F00F89EE3 /* ViewModel */,
 				469D330928D9D01200CAACE4 /* View */,
 			);
-			path = listUser;
+			path = ListUser;
 			sourceTree = "<group>";
 		};
-		469D330228D910C900CAACE4 /* addUser */ = {
+		469D330228D910C900CAACE4 /* AddUser */ = {
 			isa = PBXGroup;
 			children = (
 				4619A59228DA86B200F89EE3 /* Protocols */,
@@ -374,10 +397,10 @@
 				4619A58E28DA86B200F89EE3 /* Router */,
 				4619A58928DA86B200F89EE3 /* View */,
 			);
-			path = addUser;
+			path = AddUser;
 			sourceTree = "<group>";
 		};
-		469D330528D9111F00CAACE4 /* detailUser */ = {
+		469D330528D9111F00CAACE4 /* DetailUser */ = {
 			isa = PBXGroup;
 			children = (
 				4619A5A228DB4F0E00F89EE3 /* Protocols */,
@@ -387,13 +410,13 @@
 				4619A5A628DB4F0E00F89EE3 /* Router */,
 				4619A5A828DB4F0E00F89EE3 /* View */,
 			);
-			path = detailUser;
+			path = DetailUser;
 			sourceTree = "<group>";
 		};
 		469D330628D911FB00CAACE4 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				469D331028D9D09E00CAACE4 /* listUserConfigurator.swift */,
+				469D331028D9D09E00CAACE4 /* ListUserConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -401,7 +424,7 @@
 		469D330728D9CF9C00CAACE4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				469D331228D9D0F900CAACE4 /* listUserPresenterImpl.swift */,
+				469D331228D9D0F900CAACE4 /* ListUserPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -409,7 +432,7 @@
 		469D330828D9CFDE00CAACE4 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				469D331528D9D13C00CAACE4 /* listUserInteractorImpl.swift */,
+				469D331528D9D13C00CAACE4 /* ListUserInteractorImpl.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -417,8 +440,8 @@
 		469D330928D9D01200CAACE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				469D331928D9D19100CAACE4 /* listUserViewController.swift */,
-				469D331A28D9D19100CAACE4 /* listUserViewController.xib */,
+				469D331928D9D19100CAACE4 /* ListUserViewController.swift */,
+				469D331A28D9D19100CAACE4 /* ListUserViewController.xib */,
 				469D332828D9DB8400CAACE4 /* Cell */,
 			);
 			path = View;
@@ -427,7 +450,7 @@
 		469D330A28D9D03300CAACE4 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				469D331728D9D16800CAACE4 /* listUserRouterImpl.swift */,
+				469D331728D9D16800CAACE4 /* ListUserRouterImpl.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -435,7 +458,7 @@
 		469D331428D9D10E00CAACE4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				469D331E28D9D1E800CAACE4 /* listUserProtocols.swift */,
+				469D331E28D9D1E800CAACE4 /* ListUserProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -451,8 +474,8 @@
 		469D332828D9DB8400CAACE4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				4600B80328DA0880009DB32B /* listUserTableViewCell.swift */,
-				4600B80428DA0880009DB32B /* listUserTableViewCell.xib */,
+				4600B80328DA0880009DB32B /* ListUserTableViewCell.swift */,
+				4600B80428DA0880009DB32B /* ListUserTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -568,10 +591,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4600B80628DA0880009DB32B /* listUserTableViewCell.xib in Resources */,
-				4619A59C28DA881100F89EE3 /* addUserViewController.xib in Resources */,
-				4619A5B228DB51EE00F89EE3 /* detailUserViewController.xib in Resources */,
-				469D331C28D9D19100CAACE4 /* listUserViewController.xib in Resources */,
+				4603E20128E39A5A0070992F /* ListUser.json in Resources */,
+				4600B80628DA0880009DB32B /* ListUserTableViewCell.xib in Resources */,
+				4619A59C28DA881100F89EE3 /* AddUserViewController.xib in Resources */,
+				4603E20328E39B0C0070992F /* DetailUser.json in Resources */,
+				4619A5B228DB51EE00F89EE3 /* DetailUserViewController.xib in Resources */,
+				469D331C28D9D19100CAACE4 /* ListUserViewController.xib in Resources */,
 				469D332428D9D8EE00CAACE4 /* Localizable.strings in Resources */,
 				469D32CE28D9099800CAACE4 /* LaunchScreen.storyboard in Resources */,
 				469D32CB28D9099800CAACE4 /* Assets.xcassets in Resources */,
@@ -599,33 +624,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4619A5B328DB532B00F89EE3 /* detailUserProtocols.swift in Sources */,
-				4619A5B428DB532B00F89EE3 /* detailUserConfigurator.swift in Sources */,
-				4619A5B528DB532B00F89EE3 /* detailUserPresenterImpl.swift in Sources */,
-				4619A5B628DB532B00F89EE3 /* detailUserInteractorImpl.swift in Sources */,
-				4619A5B728DB532B00F89EE3 /* detailUserRouterImpl.swift in Sources */,
-				4619A59D28DA960400F89EE3 /* addUserProtocols.swift in Sources */,
-				4619A59E28DA960400F89EE3 /* addUserConfigurator.swift in Sources */,
-				4619A59F28DA960400F89EE3 /* addUserPresenterImpl.swift in Sources */,
-				4619A5A028DA960400F89EE3 /* addUserInteractorImpl.swift in Sources */,
-				4619A5A128DA960400F89EE3 /* addUserRouterImpl.swift in Sources */,
+				4619A5B328DB532B00F89EE3 /* DetailUserProtocols.swift in Sources */,
+				4619A5B428DB532B00F89EE3 /* DetailUserConfigurator.swift in Sources */,
+				4619A5B528DB532B00F89EE3 /* DetailUserPresenterImpl.swift in Sources */,
+				4619A5B628DB532B00F89EE3 /* DetailUserInteractorImpl.swift in Sources */,
+				4619A5B728DB532B00F89EE3 /* DetailUserRouterImpl.swift in Sources */,
+				4603E20928E39F8B0070992F /* NetworkError.swift in Sources */,
+				4603E20728E39C180070992F /* Utils.swift in Sources */,
+				4619A59D28DA960400F89EE3 /* AddUserProtocols.swift in Sources */,
+				4619A59E28DA960400F89EE3 /* AddUserConfigurator.swift in Sources */,
+				4619A59F28DA960400F89EE3 /* AddUserPresenterImpl.swift in Sources */,
+				4603E20528E39B630070992F /* MockManager.swift in Sources */,
+				4619A5A028DA960400F89EE3 /* AddUserInteractorImpl.swift in Sources */,
+				4619A5A128DA960400F89EE3 /* AddUserRouterImpl.swift in Sources */,
 				469D332128D9D20500CAACE4 /* User.swift in Sources */,
 				469D32FE28D90CD100CAACE4 /* BaseApiClient.swift in Sources */,
-				469D331828D9D16800CAACE4 /* listUserRouterImpl.swift in Sources */,
-				4619A5B128DB51EE00F89EE3 /* detailUserViewController.swift in Sources */,
+				469D331828D9D16800CAACE4 /* ListUserRouterImpl.swift in Sources */,
+				4619A5B128DB51EE00F89EE3 /* DetailUserViewController.swift in Sources */,
 				469D32FA28D90CA000CAACE4 /* BaseViewController.swift in Sources */,
 				4600B80228DA06E2009DB32B /* ExtString.swift in Sources */,
-				469D331628D9D13C00CAACE4 /* listUserInteractorImpl.swift in Sources */,
+				469D331628D9D13C00CAACE4 /* ListUserInteractorImpl.swift in Sources */,
 				469D32F728D90B8B00CAACE4 /* Kconstants .swift in Sources */,
-				469D331328D9D0F900CAACE4 /* listUserPresenterImpl.swift in Sources */,
-				469D331B28D9D19100CAACE4 /* listUserViewController.swift in Sources */,
-				4619A58628DA677800F89EE3 /* listUserViewModel.swift in Sources */,
-				4619A59B28DA881100F89EE3 /* addUserViewController.swift in Sources */,
-				469D331128D9D09E00CAACE4 /* listUserConfigurator.swift in Sources */,
+				469D331328D9D0F900CAACE4 /* ListUserPresenterImpl.swift in Sources */,
+				469D331B28D9D19100CAACE4 /* ListUserViewController.swift in Sources */,
+				4619A58628DA677800F89EE3 /* ListUserViewModel.swift in Sources */,
+				4619A59B28DA881100F89EE3 /* AddUserViewController.swift in Sources */,
+				469D331128D9D09E00CAACE4 /* ListUserConfigurator.swift in Sources */,
 				469D32FC28D90CB400CAACE4 /* BaseConfigurator.swift in Sources */,
-				4600B80528DA0880009DB32B /* listUserTableViewCell.swift in Sources */,
+				4600B80528DA0880009DB32B /* ListUserTableViewCell.swift in Sources */,
 				469D32C228D9099400CAACE4 /* AppDelegate.swift in Sources */,
-				469D331F28D9D1E800CAACE4 /* listUserProtocols.swift in Sources */,
+				469D331F28D9D1E800CAACE4 /* ListUserProtocols.swift in Sources */,
 				469D32C428D9099400CAACE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

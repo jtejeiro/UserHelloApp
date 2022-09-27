@@ -16,7 +16,7 @@ class BaseConfigurator {
     
     
     private func createViewController() -> UIViewController {
-        let view = listUserConfigurator.createModule()
+        let view = ListUserConfigurator.createModule()
         return view
     }
     

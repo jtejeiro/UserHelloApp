@@ -1,5 +1,5 @@
 //
-//  addUserPresenterImpl.swift
+//  AddUserPresenterImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,13 +8,13 @@
 import Foundation
 
 
-class addUserPresenterImpl{
+class AddUserPresenterImpl{
     
     
     // MARK: - Properties
-    weak var view: addUserView?
-    var interactor: addUserInteractor?
-    var router: addUserRouter?
+    weak var view: AddUserView?
+    var interactor: AddUserInteractor?
+    var router: AddUserRouter?
     
     // MARK: - Var
     
@@ -24,8 +24,8 @@ class addUserPresenterImpl{
     
 }
 
-// MARK: - addUserPresenter methods
-extension addUserPresenterImpl: addUserPresenter {
+// MARK: - AddUserPresenter methods
+extension AddUserPresenterImpl: AddUserPresenter {
   
     func onBackAction() {
         router?.goCloseViewController()
@@ -50,8 +50,8 @@ extension addUserPresenterImpl: addUserPresenter {
     }
     
 }
-// MARK: - addUserInteractorCallback methods
-extension addUserPresenterImpl: addUserInteractorCallback {
+// MARK: - AddUserInteractorCallback methods
+extension AddUserPresenterImpl: AddUserInteractorCallback {
     
     func fetchedAddUser(result: Result< String, Error>) {
         
@@ -71,7 +71,7 @@ extension addUserPresenterImpl: addUserInteractorCallback {
 
 
 // MARK: - Private methods
-private extension addUserPresenterImpl {
+private extension AddUserPresenterImpl {
     
     func parameterAddUserApiClient(name: String, bDate: String) -> [String:Any] {
         let parameter: [String:Any] = [ "name": name, "birthdate": bDate, "id": 0 ]

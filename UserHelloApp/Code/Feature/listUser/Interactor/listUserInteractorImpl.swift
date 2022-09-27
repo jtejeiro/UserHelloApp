@@ -1,5 +1,5 @@
 //
-//  listUserInteractorImpl.swift
+//  ListUserInteractorImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,10 +8,10 @@
 import Foundation
 
 
-class listUserInteractorImpl {
+class ListUserInteractorImpl {
     
     // MARK: - Properties
-    weak var presenter: listUserInteractorCallback?
+    weak var presenter: ListUserInteractorCallback?
     
     // MARK: - Repository
    let service: BaseAPIClient
@@ -23,20 +23,27 @@ class listUserInteractorImpl {
     }
 }
 
-extension listUserInteractorImpl: listUserInteractor {
+extension ListUserInteractorImpl: ListUserInteractor {
     
-    // MARK: - fetch listUserInteractorImpl
-    func fetchlistUser(){
-        fetchlistUserApiClient()
+    // MARK: - fetch ListUserInteractorImpl
+    func fetchListUser(){
+        
+        #if DEBUG
+        if MockManager.shared.runAppWithMock{
+            fetchListUserMock()
+        }
+        #endif
+        
+        fetchListUserApiClient()
     }
     
-    func fetchDeletelistUser(_ id:String){
-        fetchDeletelistUserApiClient(id)
+    func fetchDeleteListUser(_ id:String){
+        fetchDeleteListUserApiClient(id)
     }
     
-    // MARK: - fetch listUserInteractorImpl ApiCliente
+    // MARK: - fetch ListUserInteractorImpl ApiCliente
     
-    func fetchlistUserApiClient() {
+    func fetchListUserApiClient() {
         let absolutePath = "api/User"
         
         service.getAPIRequest(relativePath: absolutePath , parameters: ["id":6980]).response{ (response) in
@@ -46,16 +53,16 @@ extension listUserInteractorImpl: listUserInteractor {
             case .success:
                 guard let data = response.data else {return}
                 if let result = try? JSONDecoder().decode(UserElement.self , from: data){
-                    self.presenter?.fetchedlistUser(result: .success(result))
+                    self.presenter?.fetchedListUser(result: .success(result))
                 }
             case let .failure(error):
                 print(error)
-                self.presenter?.fetchedlistUser(result: .failure(error))
+                self.presenter?.fetchedListUser(result: .failure(error))
             }
         }
     }
     
-    func fetchDeletelistUserApiClient(_ id:String) {
+    func fetchDeleteListUserApiClient(_ id:String) {
         let absolutePath = "api/User"
         
         service.deleteAPIRequest(relativePath: absolutePath, parameter: id).response{ (response) in
@@ -63,12 +70,20 @@ extension listUserInteractorImpl: listUserInteractor {
             
             switch response.result {
             case .success:
-                self.presenter?.fetchedDeletelistUser(result: .success("OK"))
+                self.presenter?.fetchedDeleteListUser(result: .success("OK"))
             case let .failure(error):
                 print(error)
-                self.presenter?.fetchedDeletelistUser(result: .failure(error))
+                self.presenter?.fetchedDeleteListUser(result: .failure(error))
             }
         }
     }
     
+    
+    func fetchListUserMock(){
+        guard let model = Utils.parseJson(jsonName: "ListUser", model: UserElement.self ) else{
+            self.presenter?.fetchedListUser(result: .failure(NetworkError.jsonDecoder))
+            return
+        }
+        self.presenter?.fetchedListUser(result: .success(model))
+    }
 }

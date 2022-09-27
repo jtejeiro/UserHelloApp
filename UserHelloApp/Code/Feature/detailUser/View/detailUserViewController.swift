@@ -1,5 +1,5 @@
 //
-//  detailUserViewController.swift
+//  DetailUserViewController.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 21/9/22.
@@ -8,10 +8,10 @@
 import UIKit
 
 
-class detailUserViewController: BaseViewController {
+class DetailUserViewController: BaseViewController {
         
     // MARK: - Properties
-    var presenter: detailUserPresenter?
+    var presenter: DetailUserPresenter?
     
     @IBOutlet weak var boxView:UIView!
     
@@ -32,8 +32,8 @@ class detailUserViewController: BaseViewController {
     //MARK: - View Life Cycle Methods.
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter?.viewDidLoad()
         setupInit()
+        self.presenter?.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,8 +54,8 @@ class detailUserViewController: BaseViewController {
     }
     
 }
-// MARK: - BillViewController
-extension detailUserViewController: detailUserView {
+// MARK: - DetailUserViewController
+extension DetailUserViewController: DetailUserView {
    
     func showDetailUser(user: User) {
         self.stopLoading()
@@ -65,12 +65,13 @@ extension detailUserViewController: detailUserView {
     
     
     func showAlertError(title: String, message: String) {
+        self.stopLoading()
         self.ShowAlert(title: title, message: message)
     }
     
 }
 // MARK: - Private methods
-private extension detailUserViewController {
+private extension DetailUserViewController {
     
     // MARK: - Setup
     func setupInit() {

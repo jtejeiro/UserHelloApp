@@ -1,5 +1,5 @@
 //
-//  addUserInteractorImpl.swift
+//  AddUserInteractorImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,10 +8,10 @@
 import Foundation
 
 
-class addUserInteractorImpl {
+class AddUserInteractorImpl {
     
     // MARK: - Properties
-    weak var presenter: addUserInteractorCallback?
+    weak var presenter: AddUserInteractorCallback?
     
     // MARK: - Repository
    let service: BaseAPIClient
@@ -23,15 +23,15 @@ class addUserInteractorImpl {
     }
 }
 
-extension addUserInteractorImpl: addUserInteractor {
+extension AddUserInteractorImpl: AddUserInteractor {
     
-    // MARK: - fetch addUserInteractorImpl
+    // MARK: - fetch AddUserInteractorImpl
     func fetchAddUser(parameters:[String:Any]){
         fetchAddUserApiClient(parameters: parameters)
     }
     
     
-    // MARK: - fetch addUserInteractorImpl ApiCliente
+    // MARK: - fetch AddUserInteractorImpl ApiCliente
     
     func fetchAddUserApiClient(parameters:[String:Any]) {
         let absolutePath = "api/User"

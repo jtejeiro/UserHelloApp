@@ -1,5 +1,5 @@
 //
-//  detailUserConfigurator.swift
+//  DetailUserConfigurator.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,15 +8,15 @@
 import UIKit
 import Foundation
 
-@objc final class detailUserConfigurator: NSObject {
+@objc final class DetailUserConfigurator: NSObject {
     
     @objc class func createModule(userID:String) -> UIViewController {
         
         let apiClient = BaseAPIClient()
-        let view = detailUserViewController()
-        let presenter: detailUserPresenterImpl = detailUserPresenterImpl(userID: userID)
-        let interactor = detailUserInteractorImpl(service: apiClient)
-        let router: detailUserRouterImpl =  detailUserRouterImpl(mainRouter: view)
+        let view = DetailUserViewController()
+        let presenter: DetailUserPresenterImpl = DetailUserPresenterImpl(userID: userID)
+        let interactor = DetailUserInteractorImpl(service: apiClient)
+        let router: DetailUserRouterImpl =  DetailUserRouterImpl(mainRouter: view)
         
         view.presenter = presenter
         presenter.view = view

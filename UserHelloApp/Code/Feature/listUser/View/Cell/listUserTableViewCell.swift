@@ -1,5 +1,5 @@
 //
-//  listUserTableViewCell.swift
+//  ListUserTableViewCell.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class listUserTableViewCell: UITableViewCell {
+class ListUserTableViewCell: UITableViewCell {
     
     @IBOutlet weak var boxView:UIView!
     @IBOutlet weak var titleLabel:UILabel!
@@ -18,11 +18,11 @@ class listUserTableViewCell: UITableViewCell {
     @IBOutlet weak var MonthBirthdateLabel:UILabel!
     
     public static func nib() -> UINib {
-        return UINib(nibName: listUserTableViewCell.name(), bundle: nil)
+        return UINib(nibName: ListUserTableViewCell.name(), bundle: nil)
     }
     
     public static func name() -> String {
-      return String(describing: listUserTableViewCell.self)
+      return String(describing: ListUserTableViewCell.self)
     }
 
     override func awakeFromNib() {

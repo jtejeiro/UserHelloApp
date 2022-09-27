@@ -1,5 +1,5 @@
 //
-//  detailUserPresenterImpl.swift
+//  DetailUserPresenterImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,12 +8,12 @@
 import Foundation
 
 
-class detailUserPresenterImpl{
+class DetailUserPresenterImpl{
     
     // MARK: - Properties
-    weak var view: detailUserView?
-    var interactor: detailUserInteractor?
-    var router: detailUserRouter?
+    weak var view: DetailUserView?
+    var interactor: DetailUserInteractor?
+    var router: DetailUserRouter?
     
     // MARK: - Var
     var userID:String!
@@ -25,8 +25,8 @@ class detailUserPresenterImpl{
     
 }
 
-// MARK: - detailUserPresenter methods
-extension detailUserPresenterImpl: detailUserPresenter {
+// MARK: - DetailUserPresenter methods
+extension DetailUserPresenterImpl: DetailUserPresenter {
     
     func viewDidLoad() {
         self.interactor?.fetchDetailUser(userID)
@@ -40,8 +40,8 @@ extension detailUserPresenterImpl: detailUserPresenter {
     }
     
 }
-// MARK: - detailUserInteractorCallback methods
-extension detailUserPresenterImpl: detailUserInteractorCallback {
+// MARK: - DetailUserInteractorCallback methods
+extension DetailUserPresenterImpl: DetailUserInteractorCallback {
     
     func fetchedDetailUser(result: Result< User, Error>) {
         
@@ -61,9 +61,9 @@ extension detailUserPresenterImpl: detailUserInteractorCallback {
 
 
 // MARK: - Private methods
-private extension detailUserPresenterImpl {
+private extension DetailUserPresenterImpl {
     
-    func parameterdetailUserApiClient(name: String, bDate: String) -> [String:Any] {
+    func parameterDetailUserApiClient(name: String, bDate: String) -> [String:Any] {
         let parameter: [String:Any] = [ "name": name, "birthdate": bDate, "id": 0 ]
         return parameter
     }

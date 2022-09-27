@@ -1,5 +1,5 @@
 //
-//  addUserConfigurator.swift
+//  AddUserConfigurator.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,15 +8,15 @@
 import UIKit
 import Foundation
 
-@objc final class addUserConfigurator: NSObject {
+@objc final class AddUserConfigurator: NSObject {
     
     @objc class func createModule() -> UIViewController {
         
         let apiClient = BaseAPIClient()
-        let view = addUserViewController()
-        let presenter: addUserPresenterImpl = addUserPresenterImpl()
-        let interactor = addUserInteractorImpl(service: apiClient)
-        let router: addUserRouterImpl =  addUserRouterImpl(mainRouter: view)
+        let view = AddUserViewController()
+        let presenter: AddUserPresenterImpl = AddUserPresenterImpl()
+        let interactor = AddUserInteractorImpl(service: apiClient)
+        let router: AddUserRouterImpl =  AddUserRouterImpl(mainRouter: view)
         
         view.presenter = presenter
         presenter.view = view
@@ -30,11 +30,11 @@ import Foundation
     @objc class func createModulePopUp(_ delegate:UIViewController) -> UIViewController {
         
         let apiClient = BaseAPIClient()
-        let view = addUserViewController()
-        view.delegate = delegate as? addUserPopUpDelegate
-        let presenter: addUserPresenterImpl = addUserPresenterImpl()
-        let interactor = addUserInteractorImpl(service: apiClient)
-        let router: addUserRouterImpl =  addUserRouterImpl(mainRouter: view)
+        let view = AddUserViewController()
+        view.delegate = delegate as? AddUserPopUpDelegate
+        let presenter: AddUserPresenterImpl = AddUserPresenterImpl()
+        let interactor = AddUserInteractorImpl(service: apiClient)
+        let router: AddUserRouterImpl =  AddUserRouterImpl(mainRouter: view)
         
         view.presenter = presenter
         presenter.view = view

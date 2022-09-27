@@ -1,5 +1,5 @@
 //
-//  detailUserRouterImpl.swift
+//  DetailUserRouterImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 
-class detailUserRouterImpl {
+class DetailUserRouterImpl {
     
     var mainRouter:UIViewController
     
@@ -17,8 +17,8 @@ class detailUserRouterImpl {
         self.mainRouter = mainRouter
     }
 }
- // MARK: - detailUserRouterImpl
-extension detailUserRouterImpl: detailUserRouter  {
+ // MARK: - DetailUserRouterImpl
+extension DetailUserRouterImpl: DetailUserRouter  {
     
     func goBack() {
            mainRouter.navigationController?.popViewController(animated: true)

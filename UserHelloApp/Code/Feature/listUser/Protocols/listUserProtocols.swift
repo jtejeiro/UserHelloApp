@@ -1,5 +1,5 @@
 //
-//  listUserProtocols.swift
+//  ListUserProtocols.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -8,19 +8,19 @@ import Foundation
 
 
 // MARK: - View Protocol
-protocol listUserView: AnyObject {
-    var presenter: listUserPresenter? { get set }
-    func showlistUser(listUserVM:listUserViewModel)
+protocol ListUserView: AnyObject {
+    var presenter: ListUserPresenter? { get set }
+    func showListUser(listUserVM:ListUserViewModel)
     func showAlertError(title:String,message:String)
     
 }
 
 // MARK: - Presenter
-protocol listUserPresenter: AnyObject {
+protocol ListUserPresenter: AnyObject {
     
-    var view: listUserView? { get set }
-    var interactor: listUserInteractor? { get set }
-    var router: listUserRouter? { get set }
+    var view: ListUserView? { get set }
+    var interactor: ListUserInteractor? { get set }
+    var router: ListUserRouter? { get set }
 
     func viewDidLoad()
     func viewWillAppear()
@@ -34,20 +34,20 @@ protocol listUserPresenter: AnyObject {
 
 
 // MARK: - Interactor
-protocol listUserInteractorCallback: AnyObject {
-    func fetchedlistUser(result: Result< [User], Error>)
-    func fetchedDeletelistUser(result: Result< String , Error>)
+protocol ListUserInteractorCallback: AnyObject {
+    func fetchedListUser(result: Result< [User], Error>)
+    func fetchedDeleteListUser(result: Result< String , Error>)
 }
 
-protocol listUserInteractor: AnyObject {
-    var presenter: listUserInteractorCallback? { get set }
-    func fetchlistUser()
-    func fetchDeletelistUser(_ id:String)
+protocol ListUserInteractor: AnyObject {
+    var presenter: ListUserInteractorCallback? { get set }
+    func fetchListUser()
+    func fetchDeleteListUser(_ id:String)
     
 }
 
 // MARK: - Router
-protocol listUserRouter: AnyObject {
+protocol ListUserRouter: AnyObject {
     func routerAddViewController()
     func routerDetailViewController(userID:String)
 //    func goBack()

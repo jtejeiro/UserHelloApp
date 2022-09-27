@@ -1,5 +1,5 @@
 //
-//  addUserViewController.swift
+//  AddUserViewController.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 21/9/22.
@@ -9,11 +9,11 @@ import UIKit
 import Foundation
 
 
-class addUserViewController: BaseViewController {
+class AddUserViewController: BaseViewController {
     
     
     // MARK: - Properties
-    var presenter: addUserPresenter?
+    var presenter: AddUserPresenter?
     
     @IBOutlet weak var titleLabel:UILabel!
     @IBOutlet weak var nameLabel:UILabel!
@@ -26,7 +26,7 @@ class addUserViewController: BaseViewController {
     @IBOutlet weak var cancelButton:UIButton!
     
     private var sendDate:Date!
-    var delegate:addUserPopUpDelegate!
+    var delegate:AddUserPopUpDelegate!
     
     
     //MARK: - View Life Cycle Methods.
@@ -100,8 +100,8 @@ class addUserViewController: BaseViewController {
     
     
 }
-// MARK: - BillViewController
-extension addUserViewController: addUserView {
+// MARK: - AddUserViewController
+extension AddUserViewController: AddUserView {
     
     func showAddUser() {
         self.delegate.addUserCloseViewController()
@@ -115,7 +115,7 @@ extension addUserViewController: addUserView {
     
 }
 // MARK: - Private methods
-private extension addUserViewController {
+private extension AddUserViewController {
     
     // MARK: - Setup
     func setupInit() {

@@ -1,5 +1,5 @@
 //
-//  addUserProtocols.swift
+//  AddUserProtocols.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -9,19 +9,19 @@ import Foundation
 
 
 // MARK: - View Protocol
-protocol addUserView: AnyObject {
-    var presenter: addUserPresenter? { get set }
+protocol AddUserView: AnyObject {
+    var presenter: AddUserPresenter? { get set }
     func showAddUser()
     func showAlertError(title:String,message:String)
     
 }
 
 // MARK: - Presenter
-protocol addUserPresenter: AnyObject {
+protocol AddUserPresenter: AnyObject {
     
-    var view: addUserView? { get set }
-    var interactor: addUserInteractor? { get set }
-    var router: addUserRouter? { get set }
+    var view: AddUserView? { get set }
+    var interactor: AddUserInteractor? { get set }
+    var router: AddUserRouter? { get set }
 
     func viewDidLoad()
     func viewWillAppear()
@@ -34,23 +34,23 @@ protocol addUserPresenter: AnyObject {
 
 
 // MARK: - Interactor
-protocol addUserInteractorCallback: AnyObject {
+protocol AddUserInteractorCallback: AnyObject {
     func fetchedAddUser(result: Result< String, Error>)
 }
 
-protocol addUserInteractor: AnyObject {
-    var presenter: addUserInteractorCallback? { get set }
+protocol AddUserInteractor: AnyObject {
+    var presenter: AddUserInteractorCallback? { get set }
     func fetchAddUser(parameters:[String:Any])
     
 }
 
 // MARK: - Router
-protocol addUserRouter: AnyObject {
+protocol AddUserRouter: AnyObject {
     func goBack()
     func goCloseViewController()
 }
 
 
-protocol addUserPopUpDelegate: AnyObject {
+protocol AddUserPopUpDelegate: AnyObject {
     func addUserCloseViewController()
 }

@@ -1,5 +1,5 @@
 //
-//  addUserRouterImpl.swift
+//  AddUserRouterImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 
-class addUserRouterImpl {
+class AddUserRouterImpl {
     
     var mainRouter:UIViewController
     
@@ -17,8 +17,8 @@ class addUserRouterImpl {
         self.mainRouter = mainRouter
     }
 }
- // MARK: - addUserRouterImpl
-extension addUserRouterImpl: addUserRouter  {
+ // MARK: - AddUserRouterImpl
+extension AddUserRouterImpl: AddUserRouter  {
     
     func goBack() {
            mainRouter.navigationController?.popViewController(animated: true)

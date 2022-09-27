@@ -1,5 +1,5 @@
 //
-//  detailUserProtocols.swift
+//  DetailUserProtocols.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -9,19 +9,19 @@ import Foundation
 
 
 // MARK: - View Protocol
-protocol detailUserView: AnyObject {
-    var presenter: detailUserPresenter? { get set }
+protocol DetailUserView: AnyObject {
+    var presenter: DetailUserPresenter? { get set }
     func showDetailUser(user:User)
     func showAlertError(title:String,message:String)
     
 }
 
 // MARK: - Presenter
-protocol detailUserPresenter: AnyObject {
+protocol DetailUserPresenter: AnyObject {
     
-    var view: detailUserView? { get set }
-    var interactor: detailUserInteractor? { get set }
-    var router: detailUserRouter? { get set }
+    var view: DetailUserView? { get set }
+    var interactor: DetailUserInteractor? { get set }
+    var router: DetailUserRouter? { get set }
 
     func viewDidLoad()
     func viewWillAppear()
@@ -31,17 +31,17 @@ protocol detailUserPresenter: AnyObject {
 
 
 // MARK: - Interactor
-protocol detailUserInteractorCallback: AnyObject {
+protocol DetailUserInteractorCallback: AnyObject {
     func fetchedDetailUser(result: Result< User, Error>)
 }
 
-protocol detailUserInteractor: AnyObject {
-    var presenter: detailUserInteractorCallback? { get set }
+protocol DetailUserInteractor: AnyObject {
+    var presenter: DetailUserInteractorCallback? { get set }
     func fetchDetailUser(_ id:String)
     
 }
 
 // MARK: - Router
-protocol detailUserRouter: AnyObject {
+protocol DetailUserRouter: AnyObject {
     func goBack()
 }

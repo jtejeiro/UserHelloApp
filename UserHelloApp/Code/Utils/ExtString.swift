@@ -17,7 +17,7 @@ extension String {
     
     func getStringtoDate() -> Date {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.locale = .current
         dateFormatter.dateFormat = Kconstants.KDateFormatResponse
         return dateFormatter.date(from: self) ?? Date()
      }
@@ -27,7 +27,7 @@ extension String {
 extension Date {
     func getFormattedDate(format: String) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.locale = .current
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }

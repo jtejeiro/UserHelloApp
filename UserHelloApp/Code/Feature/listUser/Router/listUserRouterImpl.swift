@@ -1,5 +1,5 @@
 //
-//  listUserRouterImpl.swift
+//  ListUserRouterImpl.swift
 //  UserHelloApp
 //
 //  Created by Jaime Tejeiro on 20/9/22.
@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 
 
-class listUserRouterImpl {
+class ListUserRouterImpl {
     
     var mainRouter:UIViewController
     
@@ -17,16 +17,16 @@ class listUserRouterImpl {
         self.mainRouter = mainRouter
     }
 }
- // MARK: - listUserRouterImpl
-extension listUserRouterImpl: listUserRouter  {
+ // MARK: - ListUserRouterImpl
+extension ListUserRouterImpl: ListUserRouter  {
     
     func routerAddViewController() {
-        let vc = addUserConfigurator.createModulePopUp(mainRouter)
+        let vc = AddUserConfigurator.createModulePopUp(mainRouter)
         self.mainRouter.present(vc, animated: true, completion: nil)
     }
     
     func routerDetailViewController(userID:String) {
-        let vc = detailUserConfigurator.createModule(userID: userID)
+        let vc = DetailUserConfigurator.createModule(userID: userID)
         self.mainRouter.navigationController?.pushViewController(vc, animated: false)
     }
     
