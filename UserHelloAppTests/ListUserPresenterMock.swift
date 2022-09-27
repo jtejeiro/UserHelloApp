@@ -6,10 +6,20 @@
 //
 
 import XCTest
+@testable import UserHelloApp
 
 class ListUserPresenterMock: XCTestCase {
+    
+    var sut :ListUserPresenterImpl!
+    var sutView :ListUserViewMock!
+    var sutInteractor :ListUserInteractorMock!
+    var sutRouter :ListUserInteractorMock!
 
     override func setUpWithError() throws {
+        MockManager.shared.runAppWithMock = true
+        sut = ListUserPresenterImpl()
+        sutView = ListUserViewMock(presenter: sut)
+        sutInteractor = ListUserInteractorMock(presenter: sut)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -32,4 +42,40 @@ class ListUserPresenterMock: XCTestCase {
         }
     }
 
+}
+
+class ListUserViewMock: ListUserView {
+    
+    var presenter: ListUserPresenter?
+    
+    init(presenter:ListUserPresenter) {
+        self.presenter = presenter
+    }
+    
+    func showListUser(listUserVM: ListUserViewModel) {
+        
+    }
+    
+    func showAlertError(title: String, message: String) {
+        
+    }
+    
+    
+}
+
+class ListUserInteractorMock: ListUserInteractor {
+  
+    var presenter: ListUserInteractorCallback?
+    
+    init(presenter:ListUserInteractorCallback) {
+        self.presenter = presenter
+    }
+    
+    func fetchListUser() {
+    }
+    
+    func fetchDeleteListUser(_ id: String) {
+    }
+    
+    
 }
