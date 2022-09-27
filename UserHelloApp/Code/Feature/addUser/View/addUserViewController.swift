@@ -69,7 +69,7 @@ class AddUserViewController: BaseViewController {
         if sendDate == nil {
            return
         }
-        
+        self.startLoading()
         self.presenter?.onsendButtonAction(name: (nameText.text ?? "") , bDate: sendDate)
     }
     
@@ -104,12 +104,14 @@ class AddUserViewController: BaseViewController {
 extension AddUserViewController: AddUserView {
     
     func showAddUser() {
+        self.stopLoading()
         self.delegate.addUserCloseViewController()
         self.presenter?.onBackAction()
     }
     
     
     func showAlertError(title: String, message: String) {
+        self.stopLoading()
         self.ShowAlert(title: title, message: message)
     }
     

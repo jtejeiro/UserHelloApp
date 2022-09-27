@@ -27,10 +27,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5p-BM-DId">
-                    <rect key="frame" x="40" y="144" width="334" height="518"/>
+                    <rect key="frame" x="40" y="230" width="334" height="396.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eZK-Ju-Uq8">
-                            <rect key="frame" x="10" y="81" width="314" height="356.5"/>
+                            <rect key="frame" x="10" y="20" width="314" height="356.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYs-05-LrD">
                                     <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
@@ -107,7 +107,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="eZK-Ju-Uq8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="p5p-BM-DId" secondAttribute="top" constant="20" id="5z8-Yk-2dD"/>
+                        <constraint firstItem="eZK-Ju-Uq8" firstAttribute="top" secondItem="p5p-BM-DId" secondAttribute="top" constant="20" id="5z8-Yk-2dD"/>
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eZK-Ju-Uq8" secondAttribute="bottom" constant="10" id="OdO-FI-ceV"/>
                         <constraint firstAttribute="trailing" secondItem="eZK-Ju-Uq8" secondAttribute="trailing" constant="10" id="f1d-OR-Gww"/>
                         <constraint firstItem="eZK-Ju-Uq8" firstAttribute="leading" secondItem="p5p-BM-DId" secondAttribute="leading" constant="10" id="oaW-dh-0Mc"/>
@@ -118,8 +118,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10646228916597682" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="p5p-BM-DId" secondAttribute="bottom" constant="200" id="0Sv-qt-IiZ"/>
-                <constraint firstItem="p5p-BM-DId" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="GAk-Kz-gOi"/>
+                <constraint firstItem="p5p-BM-DId" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="hAC-uK-77b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p5p-BM-DId" secondAttribute="trailing" constant="40" id="qJf-0l-OJP"/>
                 <constraint firstItem="p5p-BM-DId" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="z3W-Ev-xJj"/>
             </constraints>
